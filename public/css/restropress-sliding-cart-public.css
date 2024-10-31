@@ -1,0 +1,265 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ /* Floating Cart Icon Styles */
+ /* Style the cart icon button */
+ @font-face {
+  font-family: 'icomoon';
+  src:  url('./fonts/icomoon.eot?ui1rhn');
+  src:  url('./fonts/icomoon.eot?ui1rhn#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?ui1rhn') format('truetype'),
+    url('./fonts/icomoon.woff?ui1rhn') format('woff'),
+    url('./fonts/icomoon.svg?ui1rhn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  /* font-display: block; */
+}
+
+.rpress-icon-cart:before {
+  font-family: 'icomoon' !important;
+  /* speak: never; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /*margin: 10px;
+  padding: 17px;  Increased padding to make it more rounded */
+  border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+  /* background-color: #e3d6d7;  */
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e93a";
+   /*position: fixed; or use absolute if you want it positioned relative to a parent element */
+  /*bottom:29px;  Adjust the top position as needed */
+ /* right: 100px;  Adjust the right position as needed */
+  z-index: 9999;
+  color: #330676;
+
+} 
+#rpress-floating-cart-icon{
+	position: fixed; 
+	bottom: 80px; 
+	right: 69px;
+	z-index: 9999;
+	width: 5%;
+	height: 42px;
+	font-size: 30px;
+	padding-left: -1%;
+	/* color: #732605;	 */
+}
+.rpress-badge {
+	font-weight: bold;
+}
+  
+.sticky-sidebar.cat-lists.rp-mobile-cat {
+	height: auto;
+	max-height: 60%;
+	margin-bottom: 30px;
+	width: 75% !important;
+	background: #FFFFFF;
+	position: fixed;
+	z-index: 99999;
+	box-shadow: -7px -5px 16px #00000024;
+	padding: 6px !important;
+	bottom: 98px;
+	left: 50%;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	transform: translate(-50%, 0px);
+	color: #732605;
+}
+	
+.rp-mb-cat-ft-btn.rp-close-menu .rp-mb-cat-txt i {
+	display: none
+}
+.rp-mb-cat-ft-btn {
+	font-size: 17px;
+	width: 30%;
+	background: hsl(113, 14%, 89%);
+	position: fixed;
+	z-index: 99999;
+	box-shadow: 1px 1px 16px #0000008c;
+	padding: 6px;
+	bottom: 80px;
+	left: 50%;
+	border-radius: 100px;
+	cursor: pointer;
+	text-align: center;
+	transform: translate(-50%, 0px);
+	font-weight: 500
+}
+.rp-mb-cat-txt i {
+	padding-right: 5px
+}
+.sticky-sidebar.cat-lists.rp-mobile-cat {
+	display: none
+}
+	/* body.rp-cat-no-scroll {
+		overflow: hidden
+} */
+.rp-cat-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #8d8b8b;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: .6;
+	z-index: 9999;
+	overflow: hidden;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease
+}
+	/* .rpress_fooditems_list.rp-col-lg-7.rp-col-md-7.rp-col-sm-9.rp-col-xs-12 {
+		width: 50%
+} */
+span.rp-mb-cat-txt {
+	padding: 0;
+	font-weight: inherit;
+	font-size: inherit
+}
+	/*functionality code*/
+.rpress-sidebar-main-wrap {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 100%;
+	background: #fafafa;
+	transition: 1s ease;
+	height: 100%;
+	z-index: 99999;
+	overflow: auto
+}
+.rpress-mobile-cart-icons {
+	display: inline-block;
+	border-radius: 0;
+	bottom: 0;
+	cursor: pointer;
+	height: 50px;
+	width: 100%;
+	outline: none;
+	position: fixed;
+	left: 0;
+	z-index: 999999;
+	font-size: 15px !important;
+	right: 0;
+	justify-content: space-between;
+	line-height: 50px;
+	box-shadow: 0px -1px 14px #0e0e0e8c;
+	background: #fff;
+	padding: 0 15px;
+}
+.rpress-mobile-cart-icons span.rp-separation{
+	opacity: .3
+}
+.rpress-section .rpress-sidebar-cart-wrap {
+	box-shadow: none
+}
+.rpress-sidebar-cart-wrap .rpress-cart .cart_item.empty {
+	position: relative;
+	transform: translate(0, 70%);
+	top: 50%
+}
+.rp-cart-right-wrap {
+	width: 40%;
+	text-align: center;
+	padding: 0px 15px;
+	opacity: 1;
+	border-radius: 4px;
+	line-height: 40px;
+	margin: 5px 0px;
+	height: 40px;
+	display: inline-block
+}
+.rp-cart-left-wrap {
+    width: 100%;
+    text-align: left;
+    background: #55e384;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 9999; /* Ensure a high z-index to keep it above other elements */
+    bottom: 0; /* Adjust the position as needed */
+}
+.mob-view-order-txt h6 {
+	background: #db2f39;
+	padding: 14px;
+	color: #FFFFFF;
+	border-radius: 7px
+}
+.rp-cart-left-wrap span.rp-cart-mb-icon {
+	padding-right: 5px
+}
+.rp-cart-right-wrap span.rp-cart-mb-icon{
+	padding-left: 5px
+}
+.close-cart-ic {
+	display: block !important;
+	width: 30px;
+	height: 30px;
+	padding: 7px 9px;
+	border-radius: 50px;
+	position: relative;
+	right: 12px;
+	float: right;
+	text-align: right;
+	top: 10px;
+	cursor: pointer;
+}
+.full-width {
+    width: 100% !important;
+}
+.restropress .rpress.item-order a.rpress-clear-cart {
+    top: 0;
+    right: 30px;
+}
+.restropress i.fa.fa-times.close-cart-ic{
+	width: 26px;
+    height: 26px;
+    line-height: 26px !important;
+	padding: 0px;
+	text-align: center;
+}
+@media only screen and (max-width: 768px){
+	.rp-cart-left-wrap {
+		width: 100% !important;
+		background:#55e384 !important;
+		padding: 0 15px !important;
+	}
+	.restropress .rpress-mobile-cart-icons{
+
+		padding: 0 !important; 
+	}
+	.restropress .rpress.item-order a.rpress-clear-cart {
+		right: 0;
+	}
+	
+}
+.rpressStickySidebar {
+    transform: none !important;
+}
+.rpress-floating-inner-wrap {
+    position: relative;
+	display: inline-block;
+}
+.rpress-floating-inner-wrap  .rpress-badge {
+	font-size: 22px;
+    position: absolute;
+    right: -4px;
+    top: -9px;
+    z-index: 99999;
+}
+.rpress-floating-inner-wrap  .rpress-badge span{
+	top:0;
+}
